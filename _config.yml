@@ -1,0 +1,144 @@
+# Site configuration
+# 0. Set theme
+# 1. Files excluded from Jekyll builds
+# 2. Installed Gems
+# 3. Gem settings
+# 4. Jekyll settings
+# 5. Collections
+# 6. Jekyll collections settings
+# 7. Site settings
+# 8. Site favicons & manifest icons
+# 9. Site navigation
+
+# 0. Set theme
+remote_theme: daviddarnes/alembic
+
+# 1. Files excluded from Jekyll builds
+exclude:
+- README.md
+- LICENSE
+- CNAME # @TODO
+- Gemfile
+- Gemfile.lock
+- external/ # Houses the Alembic License
+
+# 2. Installed Gems
+plugins:
+- jekyll-sitemap
+- jekyll-mentions
+- jekyll-paginate
+- jekyll-seo-tag
+- jekyll-redirect-from
+- jekyll-default-layout
+- jekyll-feed
+- jemoji
+- jekyll-remote-theme
+
+# 3. Gem settings
+# jekyll-paginate
+paginate: 5
+paginate_path: '/blog/page:num/'
+# jekyll-mentions
+# @TODO - Is this still used?
+# jekyll-seo-tag
+social: # social overrides
+  name: Charles Emerson # real name
+  links:  # social aliases (sameAs)
+    - https://github.com/cjemerson
+
+# 4. Jekyll settings
+sass:
+  style: compressed # Style compression
+permalink: pretty # Permalink style (/:categories/YYYY/MM/DD/page-name/)
+excerpt_separator: <!-- more --> # Marks end of excerpt in posts
+timezone: America/Anchorage # Timezone for blog posts and alike
+
+# 5. Collections
+# @TODO - Is this still used?
+# collections:
+#   posts:
+#     title: 'My Recent Posts'
+#     output: true
+#     description: ''
+#     feature_text: ''
+#     feature_image: 'https://picsum.photos/2560/600?image=866'
+
+# 6. Jekyll collections settings
+# @TODO - Is this used?
+# defaults:
+#   -
+#     scope:
+#       path: ''
+#     values:
+#       image: '/assets/default-social-image.png' # Default image for sharing
+
+# 7. Site settings
+encoding: utf-8 # Make sure the encoding is right
+lang: en-US # Set the site language
+title: 'CJE3' # Site name or title, also used in jekyll-seo-tag
+author: 'Charles Emerson'
+# @TODO - SVG Logo
+logo: '/assets/favicon.png' # Site logo, also used in jekyll-seo-tag
+# Site description and default description, also used in jekyll-seo-tag
+description: 'Pushing myself to learn new things and remember those forgotten.'
+url: 'https://cje3.com' # Site url, also used in jekyll-seo-tag
+baseurl: ''
+repo: 'https://github.com/cjemerson/cjemerson.github.io'
+email: 'cjemerson@alaska.edu'
+# disqus: 'alembic-1' # Blog post comments, uncomment the option and set the site ID from your Disqus account
+# google_analytics: ''
+# google_analytics_anonymize_ip: ''
+# service_worker: false # Will turn off the service worker if set to false
+css_inline: true # Will insert all styles into a single <style> block in the <head> element and remove the style <link> reference
+
+# 8. Site favicons & manifest icons
+# @TODO
+# favicons: # Favicons are also used in the manifest file. Syntax is 'size: path'
+#   16: '/assets/logos/logo@16px.png'
+#   32: '/assets/logos/logo@32px.png'
+#   96: '/assets/logos/logo@96px.png'
+#   120: '/assets/logos/logo@120px.png'
+#   144: '/assets/logos/logo@144px.png'
+#   180: '/assets/logos/logo@180px.png'
+#   512: '/assets/logos/logo@512px.png'
+#   1024: '/assets/logos/logo@1024px.png'
+
+# 9. Site navigation
+navigation_header:
+# - title: Home
+#   url: /
+- title: About
+  url: /about/
+# - title: Resume @TODO
+#   url: /resume/
+# - title: Projects @TODO
+#  url: /projects/
+- title: Blog
+  url: /blog/
+# - title: Art @TODO
+#   url: /art/
+- title: Search
+  url: /search/
+navigation_footer: # Duplicate of Nav-Header
+# - title: Home
+#   url: /
+- title: About
+  url: /about/
+# - title: Resume @TODO
+#   url: /resume/
+# - title: Projects @TODO
+#  url: /projects/
+- title: Blog
+  url: /blog/
+# - title: Art @TODO
+#   url: /art/
+- title: Search
+  url: /search/
+social_links: # Appears in sidebar. Set the urls then uncomment and comment out as desired
+  GitHub: https://github.com/cjemerson
+  link: https://cje3.com
+  RSS: /feed.xml
+sharing_links: # Appear at the bottom of single blog posts, add as desired. The value can be 'true' or the desired button colour
+  Twitter: '#0d94e7'
+  facebook: '#3B5998'
+  Email: true
