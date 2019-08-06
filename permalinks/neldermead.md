@@ -1,5 +1,5 @@
 ---
 layout: redirect
-permalink: /NelderMead/
-redirectTo: https://www.github.com/cjemerson/NelderMead
+permalink: /neldermead/
+redirectURL: 'https://www.github.com/cjemerson/neldermead/'
 ---

@@ -17,7 +17,7 @@ remote_theme: daviddarnes/alembic
 exclude:
 - README.md
 - LICENSE
-- CNAME # @TODO
+- CNAME
 - Gemfile
 - Gemfile.lock
 - external/ # Houses the Alembic License
@@ -38,8 +38,6 @@ plugins:
 # jekyll-paginate
 paginate: 5
 paginate_path: '/blog/page:num/'
-# jekyll-mentions
-# @TODO - Is this still used?
 # jekyll-seo-tag
 social: # social overrides
   name: Charles Emerson # real name
@@ -55,7 +53,8 @@ timezone: America/Anchorage # Timezone for blog posts and alike
 
 # 5. Collections
 # @TODO - Is this still used?
-# collections:
+collections:
+  - projects
 #   posts:
 #     title: 'My Recent Posts'
 #     output: true
@@ -80,7 +79,7 @@ author: 'Charles Emerson'
 # @TODO - SVG Logo
 logo: '/assets/logos/logo@96px.png' # Site logo, also used in jekyll-seo-tag
 # Site description and default description, also used in jekyll-seo-tag
-description: 'Pushing myself to learn new things and remember those forgotten.'
+description: 'Pushing myself to learn new things and practice others.'
 url: 'https://cje3.com' # Site url, also used in jekyll-seo-tag
 baseurl: ''
 repo: 'https://github.com/cjemerson/cjemerson.github.io'
@@ -110,8 +109,8 @@ navigation_header:
   url: /about/
 # - title: Resume @TODO
 #   url: /resume/
-# - title: Projects @TODO
-#  url: /projects/
+- title: Projects
+  url: /projects/
 - title: Blog
   url: /blog/
 # - title: Art @TODO
@@ -125,8 +124,8 @@ navigation_footer: # Duplicate of Nav-Header
   url: /about/
 # - title: Resume @TODO
 #   url: /resume/
-# - title: Projects @TODO
-#  url: /projects/
+- title: Projects
+  url: /projects/
 - title: Blog
   url: /blog/
 # - title: Art @TODO
